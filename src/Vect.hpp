@@ -14,8 +14,11 @@ class Vect {
 		Vect negative();
 		double dotProduct(Vect v);
 		Vect crossProduct(Vect v);
-		Vect addVector(Vect v);
-		Vect multVector(double scalar);
+		Vect operator+(Vect v);
+		Vect operator-(Vect v);
+		Vect operator*(double scalar);
+		Vect vectAdd(Vect v);
+		Vect vectMult(double scalar);
 
 	private:
 		double _x;
